@@ -14,6 +14,11 @@ body {
   stroke: #000;
   shape-rendering: crispEdges;
 }
+path {
+stroke: black;
+stroke-width: 2;
+fill: none;
+}
 
 .dot {
   stroke: #000;
@@ -27,13 +32,20 @@ body {
 }
 </style>
 <body>
+<select id = "year">
+</select>
+<select id = "points_or_wins">
+	<option value = "points">Points</option>
+</select>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 
 <script>
 var margin = {top: 50, right: 20, bottom: 30, left: 40},
     width = 1400 - margin.left - margin.right,
     height = 700 - margin.top - margin.bottom;
-
+	
+var data;
+var test_data;
 /* 
  * value accessor - returns the value to encode for a given data object.
  * scale - maps value to a visual display encoding, such as a pixel position.
@@ -43,10 +55,9 @@ var margin = {top: 50, right: 20, bottom: 30, left: 40},
 
 // setup x 
 var xValue = function(d) { return d.Age;}, // data -> value
-    xScale = d3.scale.ordinal().rangePoints([0, width]), // value -> display
+    xScale = d3.scale.linear().rangeRound([0, width]), // value -> display
     xMap = function(d) { return xScale(xValue(d));}, // data -> display
-    xAxis = d3.svg.axis().scale(xScale).orient("bottom")
-	.tickSize(-height);
+    xAxis = d3.svg.axis().scale(xScale).orient("bottom");
 var formatPercent = d3.format("%");
 var formatCount = d3.format(",.0f");
 // setup y
@@ -54,170 +65,137 @@ var yValue = function(d) { return d.conv;}, // data -> value
     yScale = d3.scale.linear().rangeRound([height, 0]), // value -> display
     yMap = function(d) { return yScale(yValue(d));}, // data -> display
     yAxis = d3.svg.axis().scale(yScale).orient("left")
-	.tickFormat(formatPercent)
-	.tickSize(-width);
-
+	.tickFormat(formatCount);
+var valueline = d3.svg.line()
+.interpolate("linear")
+.x(function(d) { return xScale(d.week); })
+.y(function(d) { return yScale(d.cum_points); });
 var rValue = function(d) {return Math.sqrt(d.quote);};
 var rScale = d3.scale.linear().range([0,25]);
 // setup fill color
-var cValue = function(d) { return d.Program;},
-    color = d3.scale.category10();
+var cValue = function(d) { return d.Program;};
 
+var color = d3.scale.category10();
 // add the graph canvas to the body of the webpage
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
+var by_player2;
 // add the tooltip area to the webpage
 var tooltip = d3.select("body").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
 
 // load data
-d3.csv("data/conversion.csv", function(error, data) {
+var csv_data = d3.csv("data/data_import.csv", function(error, data) {
 
   // change string (from CSV) into number format
   data.forEach(function(d) {
-    d.conv = +d.Conversion;
-    d.quote = +d.Quotes;
-//    console.log(d);
+	d.Week = +d.Week
   });
+  
+ data = data.filter(function(d) {return d.Year != "" && d.Week <= 13;});
+ 
+ var years = d3.nest()
+	.key(function(d) {return d.Year;}).sortKeys(d3.descending)
+	.entries(data);
+ 
+ d3.select("#year").selectAll(".option").data(years).enter().append("option")
+	.attr("value",function(d) {return d.key;})
+	.text(function(d) {return d.key;});
+ d3.select("#year").on("change",create_graph);
 
-  // don't want dots overlapping axis, so add in buffer to data domain
-  yScale.domain([0, d3.max(data, yValue)]);
-  xScale.domain([" ","19-20","21-22","23-24","25-29","30-34","35-39","40-44","45-49","50-65","66-69","70-99","  "]);
-  rScale.domain([0, d3.max(data, rValue)]);
-  // x-axis
+create_graph();
+
+function create_graph() {
+
+
+
+year_option = document.getElementById("year");
+data_year = data.filter(function(d) {return d.Year == year_option.options[year_option.selectedIndex].text;});
+by_player = d3.nest()
+	.key(function(d) {return d.Team+"_"+d.Week+"_"+d.Vs;})
+	.rollup(function(totals) {return {"Points": d3.sum(totals, function(d) {return d.Points;})}})
+	.entries(data_year.filter(function(d) {return d.Slot != "Bench";}));
+	
+	
+		for (var i = 0; i <by_player.length; i++) {
+		by_player[i].player = by_player[i].key.split("_")[0];
+		by_player[i].week = Number(by_player[i].key.split("_")[1]);
+		by_player[i].opponent = by_player[i].key.split("_")[2];
+		by_player[i].win = 0;
+		by_player[i].cum_points = 0;
+		by_player[i].cum_wins = 0;
+		for (var j = 0; j <by_player.length; j++) {
+			if (by_player[i].opponent === by_player[j].player && by_player[i].week == by_player[j].week) {
+			if(by_player[i].values.Points > by_player[j].values.Points) {
+			by_player[i].win = 0; }
+			else if (by_player[i].values.Points == by_player[j].values.Points) {
+			by_player[i].win = .5;}
+			}}
+		for (var j = 0; j <by_player.length; j++) {
+			if (by_player[i].player == by_player[j].player && by_player[i].week >= by_player[j].week) {
+			by_player[i].cum_points = by_player[i].cum_points + by_player[j].values.Points;
+			by_player[i].cum_wins = by_player[i].cum_wins + by_player[j].win;
+			}
+
+		}}	
+
+max_week = d3.max(by_player, function(d) {return d.week;});
+d3.selectAll(".label").remove();
+
+yScale.domain([0, d3.max(by_player, function(d) {return d.cum_points})]);
+xScale.domain([1, d3.max(by_player, function(d) {return d.week;})]);
+
   svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
       .call(xAxis)
+      .attr("class", "x label")
     .append("text")
-      .attr("class", "label")
       .attr("x", width)
       .attr("y", -6)
       .style("text-anchor", "end")
-      .text("Age Group");
-
-  // y-axis
-  svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
-      .attr("class", "label")
+      .text("Week");
+svg.append("g")
+	.attr("class","y axis")
+	.call(yAxis)
+	.attr("class", "y label")
     .append("text")
       .attr("transform", "rotate(-90)")
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Conversion");
+      .text("Cumulative Points");
+d3.select(".gline").remove();
+svg.append("g")
+	.attr("class","gline");
+var by_player2 = d3.nest()
+	.key(function(d) {return d.player;})
+	.entries(by_player);
+test_data = by_player2;
+var dataPath = by_player2.forEach(function(d) {
+var player = d.key;
+test_data = player
+	svg.select(".gline")
+	.append("path")
+	.data(by_player)
+	.attr("class","graph_line")
+.attr("id", d.key)
+.style("stroke",color(d.key))
+.attr("d", valueline(d.values))
+.append("title")
+	.html(d.key);
+});
 
-  // draw dots
-  svg.selectAll(".dot")
-      .data(data)
-    .enter().append("circle")
-      .attr("class", "dot")
-      .attr("r", function(d) {return rScale(Math.sqrt(d.quote));})
-      .attr("cx", xMap)
-      .attr("cy", yMap)
-	  .attr("opacity",.75)
-      .style("fill", function(d) { return color(cValue(d));}) 
-      .on("mouseover", function(d) {
-          tooltip.transition()
-               .duration(200)
-               .style("opacity", .9);
-          tooltip.html(d["Cereal Name"] + "<br/> (" + xValue(d) 
-	        + ", " + yValue(d) + ")")
-               .style("left", (d3.event.pageX + 5) + "px")
-               .style("top", (d3.event.pageY - 28) + "px");
-      })
-      .on("mouseout", function(d) {
-          tooltip.transition()
-               .duration(500)
-               .style("opacity", 0);
-      });
+};
 
-  // draw legend
-  var legend = svg.selectAll(".legend")
-      .data(color.domain())
-    .enter().append("g")
-      .attr("class", "legend")
-      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
-  // draw legend colored rectangles
-  legend.append("rect")
-      .attr("x", width - 18)
-      .attr("width", 18)
-      .attr("height", 18)
-      .style("fill", color);
 
-  // draw legend text
-  legend.append("text")
-      .attr("x", width - 24)
-      .attr("y", 9)
-      .attr("dy", ".35em")
-      .style("text-anchor", "end")
-      .text(function(d) { return d;})
-  // draw legend circles
- var legendcircle = 115;
- var legendgap = 50;
-  svg.append("circle")
-  .attr("cx",width - 10)
-  .attr("cy",legendcircle)
-  .attr("r",25)
-  .attr("class","dot")
-  .attr("fill","grey");
-  
-  svg.append("text")
-      .attr("x", width - 40)
-      .attr("y", legendcircle)
-      .attr("dy", ".35em")
-      .style("text-anchor", "end")
-      .text("Quote Count: " + formatCount(d3.max(data,function(d) {return d.quote;})));
-  
-    svg.append("circle")
-  .attr("cx",width - 10)
-  .attr("cy",legendcircle+legendgap)
-  .attr("r",Math.sqrt(Math.pow(25,2)*(3/4)))
-  .attr("class","dot")
-  .attr("fill","grey");
-  
-    svg.append("text")
-      .attr("x", width - 35)
-      .attr("y", legendcircle+legendgap)
-      .attr("dy", ".35em")
-      .style("text-anchor", "end")
-      .text("Quote Count: " + formatCount(d3.max(data,function(d) {return d.quote;})*(3/4)));
-  
-     svg.append("circle")
-  .attr("cx",width - 10)
-  .attr("cy",legendcircle+95)
-  .attr("r",Math.sqrt(Math.pow(25,2)*(1/2)))
-  .attr("class","dot")
-  .attr("fill","grey");
+//    console.log(d);
 
-  
-    svg.append("text")
-      .attr("x", width - 30)
-      .attr("y", legendcircle+95)
-      .attr("dy", ".35em")
-      .style("text-anchor", "end")
-      .text("Quote Count: " + formatCount(d3.max(data,function(d) {return d.quote;})*(1/2)));  
-     svg.append("circle")
-  .attr("cx",width - 10)
-  .attr("cy",legendcircle+130)
-  .attr("r",Math.sqrt(Math.pow(25,2)*(1/4)))
-  .attr("class","dot")
-  .attr("fill","grey");
-  
-  
-    svg.append("text")
-      .attr("x", width - 24)
-      .attr("y", legendcircle+130)
-      .attr("dy", ".35em")
-      .style("text-anchor", "end")
-      .text("Quote Count: " + formatCount(d3.max(data,function(d) {return d.quote;})*(1/4)));
 });
 
 </script>
