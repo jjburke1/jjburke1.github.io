@@ -73,7 +73,7 @@ var rScale = d3.scale.linear().range([0,25]);
 // setup fill color
 var cValue = function(d) { return d.Program;};
 
-var color = d3.scale.category10();
+var color = d3.scale.category20();
 // add the graph canvas to the body of the webpage
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
