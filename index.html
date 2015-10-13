@@ -36,6 +36,7 @@ fill: none;
 </select>
 <select id = "points_or_wins">
 	<option value = "points">Points</option>
+	<option value = "wins">Wins</option>
 </select>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 
@@ -66,10 +67,7 @@ var yValue = function(d) { return d.conv;}, // data -> value
     yMap = function(d) { return yScale(yValue(d));}, // data -> display
     yAxis = d3.svg.axis().scale(yScale).orient("left")
 	.tickFormat(formatCount);
-var valueline = d3.svg.line()
-.interpolate("linear")
-.x(function(d) { return xScale(d.week); })
-.y(function(d) { return yScale(d.cum_points); });
+
 var rValue = function(d) {return Math.sqrt(d.quote);};
 var rScale = d3.scale.linear().range([0,25]);
 // setup fill color
@@ -106,12 +104,20 @@ var csv_data = d3.csv("data/data_import.csv", function(error, data) {
 	.attr("value",function(d) {return d.key;})
 	.text(function(d) {return d.key;});
  d3.select("#year").on("change",create_graph);
-
+d3.select("#points_or_wins").on("change",create_graph);
 create_graph();
 
 function create_graph() {
+number_option = document.getElementById("points_or_wins");
 
-
+var valueline = d3.svg.line()
+.interpolate("linear")
+.x(function(d) { return xScale(d.week); })
+.y(function(d) { if(number_option.options[number_option.selectedIndex].text == "Points") {
+return yScale(d.cum_points);}
+else {
+return yScale(d.cum_wins);
+} });
 
 year_option = document.getElementById("year");
 data_year = data.filter(function(d) {return d.Year == year_option.options[year_option.selectedIndex].text;});
@@ -119,19 +125,20 @@ by_player = d3.nest()
 	.key(function(d) {return d.Team+"_"+d.Week+"_"+d.Vs;})
 	.rollup(function(totals) {return {"Points": d3.sum(totals, function(d) {return d.Points;})}})
 	.entries(data_year.filter(function(d) {return d.Slot != "Bench";}));
-	
-	
 		for (var i = 0; i <by_player.length; i++) {
 		by_player[i].player = by_player[i].key.split("_")[0];
 		by_player[i].week = Number(by_player[i].key.split("_")[1]);
 		by_player[i].opponent = by_player[i].key.split("_")[2];
 		by_player[i].win = 0;
 		by_player[i].cum_points = 0;
-		by_player[i].cum_wins = 0;
+		by_player[i].cum_wins = 0;}
+	
+		for (var i = 0; i <by_player.length; i++) {
 		for (var j = 0; j <by_player.length; j++) {
 			if (by_player[i].opponent === by_player[j].player && by_player[i].week == by_player[j].week) {
+			by_player[i].opponent_points = by_player[j].values.Points;
 			if(by_player[i].values.Points > by_player[j].values.Points) {
-			by_player[i].win = 0; }
+			by_player[i].win = 1; }
 			else if (by_player[i].values.Points == by_player[j].values.Points) {
 			by_player[i].win = .5;}
 			}}
@@ -146,8 +153,25 @@ by_player = d3.nest()
 max_week = d3.max(by_player, function(d) {return d.week;});
 d3.selectAll(".label").remove();
 
-yScale.domain([0, d3.max(by_player, function(d) {return d.cum_points})]);
-xScale.domain([1, d3.max(by_player, function(d) {return d.week;})]);
+yScale.domain([0, d3.max(by_player, function(d) {if(number_option.options[number_option.selectedIndex].text == "Points") {
+return d.cum_points;}
+else {
+return d.cum_wins;
+}})]);
+xScale.domain([1, d3.max(by_player, function(d) {return max_week;})]);
+var y_label;
+xAxis.ticks(max_week - 1);
+
+
+if(number_option.options[number_option.selectedIndex].text == "Points") {
+y_label = "Cumulative Points";
+yAxis.ticks(6);
+}
+else {
+y_label = "Wins";
+yAxis.ticks(d3.max(by_player, function(d) {return d.cum_wins;}) + 1);
+}
+
 
   svg.append("g")
       .attr("class", "x axis")
@@ -168,7 +192,7 @@ svg.append("g")
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Cumulative Points");
+      .text(y_label);
 d3.select(".gline").remove();
 svg.append("g")
 	.attr("class","gline");
@@ -190,6 +214,13 @@ test_data = player
 	.html(d.key);
 });
 
+d3.selectAll("path.graph_line").on("mouseover",function(d) {
+d3.selectAll("path.graph_line").style("opacity",.2);
+
+d3.select(this).style("stroke-width","5px").style("opacity",1);
+});
+d3.selectAll("path.graph_line").on("mouseout",function(d) {d3.select(this).style("stroke-width","2px")
+d3.selectAll("path.graph_line").style("opacity",1);});
 };
 
 
