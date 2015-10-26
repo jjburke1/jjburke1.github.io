@@ -30,6 +30,15 @@ fill: none;
   height: 28px;
   pointer-events: none;
 }
+
+.semihidden {
+	opacity: .3
+	}
+	
+.hidden {
+	pointer-events: none;
+	opacity: 0;
+	}
 </style>
 <body>
 <select id = "year">
@@ -38,15 +47,17 @@ fill: none;
 	<option value = "points">Points</option>
 	<option value = "wins">Wins</option>
 </select>
+</br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 
 <script>
 var margin = {top: 50, right: 20, bottom: 30, left: 40},
-    width = 1400 - margin.left - margin.right,
-    height = 700 - margin.top - margin.bottom;
+    width = 1500 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
 	
 var data;
 var test_data;
+var classes;
 /* 
  * value accessor - returns the value to encode for a given data object.
  * scale - maps value to a visual display encoding, such as a pixel position.
@@ -80,6 +91,9 @@ var svg = d3.select("body").append("svg")
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+var text_svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", 100)
 var by_player2;
 // add the tooltip area to the webpage
 var tooltip = d3.select("body").append("div")
@@ -206,13 +220,39 @@ test_data = player
 	svg.select(".gline")
 	.append("path")
 	.data(by_player)
-	.attr("class","graph_line")
+	.attr("class", d.key + " graph_line")
 .attr("id", d.key)
 .style("stroke",color(d.key))
 .attr("d", valueline(d.values))
 .append("title")
 	.html(d.key);
 });
+text_svg.selectAll(".playerlabel").remove();
+text_svg.selectAll(".playerlabel")
+	.data(by_player2)
+	.enter().append("text")
+	.attr("class",function(d) {return d.key + " playerlabel";})
+	.attr("text-anchor","middle")
+	.attr("x",function(d, i) {if(i < 5 ) {return (i * ((width + margin.right + margin.left)/5)) + ((width + margin.right + margin.left)/10)  }
+	else if(i < 10 ) {return ((i - 5) * ((width + margin.right + margin.left)/5)) + ((width + margin.right + margin.left)/10)  }
+	else {return ((i - 10) * ((width + margin.right + margin.left)/5)) + ((width + margin.right + margin.left)/10)  }
+	})
+	.attr("y",function(d, i) {if(i < 5) { return (100) / 6}
+	else if (i < 10) {return (100) * (1/2)}
+	else {return (100) * (5/6)}
+	
+	})
+	.text(function(d) {return d.key;})
+	.style("fill",function(d) {return color(d.key);})
+	.style("font-size","20px")
+	.on("click",function(d) {classes = d3.select(this).attr("class").split(" ")[0] + "." + d3.select(this).attr("class").split(" ")[1];
+	if(d3.select(this).attr("class").match(/semihidden.*/))
+	{d3.select(this).classed("semihidden",false);
+	d3.select("." + classes + ".graph_line").classed("hidden",false);}
+	else
+	{d3.select(this).classed("semihidden",true);
+	d3.select("." + classes + ".graph_line").classed("hidden",true);}});
+
 
 d3.selectAll("path.graph_line").on("mouseover",function(d) {
 d3.selectAll("path.graph_line").style("opacity",.2);
