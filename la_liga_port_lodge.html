@@ -47,6 +47,12 @@ fill: none;
 	<option value = "points">Points</option>
 	<option value = "wins">Wins</option>
 </select>
+<input type = "checkbox" id = "qb" class = "position_check" value = "QB" checked>QB</input>
+<input type = "checkbox" id = "rb" class = "position_check" value = "RB" checked>RB</input>
+<input type = "checkbox" id = "wr" class = "position_check" value = "WR" checked>WR</input>
+<input type = "checkbox" id = "te" class = "position_check" value = "TE" checked>TE</input>
+<input type = "checkbox" id = "d" class = "position_check" value = "D/ST" checked>D/ST</input>
+<input type = "checkbox" id = "k" class = "position_check" value = "K" checked>K</input>
 </br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 
@@ -58,6 +64,8 @@ var margin = {top: 50, right: 20, bottom: 30, left: 40},
 var data;
 var test_data;
 var classes;
+var positions;
+var position_string;
 /* 
  * value accessor - returns the value to encode for a given data object.
  * scale - maps value to a visual display encoding, such as a pixel position.
@@ -119,9 +127,19 @@ var csv_data = d3.csv("data/data_import.csv", function(error, data) {
 	.text(function(d) {return d.key;});
  d3.select("#year").on("change",create_graph);
 d3.select("#points_or_wins").on("change",create_graph);
+d3.selectAll(".position_check").on("change",create_graph);
 create_graph();
 
 function create_graph() {
+var pos_checkboxes = ["qb","rb","wr","te","d","k"]; // array of positions
+position_string = [];
+for (var i = 0; i < pos_checkboxes.length; i++) { // loop through positons array
+if(document.getElementById(pos_checkboxes[i]).checked == true) // if position is checked
+	{
+	position_string.push(document.getElementById(pos_checkboxes[i]).value);
+	};
+}
+
 number_option = document.getElementById("points_or_wins");
 
 var valueline = d3.svg.line()
@@ -138,7 +156,7 @@ data_year = data.filter(function(d) {return d.Year == year_option.options[year_o
 by_player = d3.nest()
 	.key(function(d) {return d.Team+"_"+d.Week+"_"+d.Vs;})
 	.rollup(function(totals) {return {"Points": d3.sum(totals, function(d) {return d.Points;})}})
-	.entries(data_year.filter(function(d) {return d.Slot != "Bench";}));
+	.entries(data_year.filter(function(d) {return d.Slot != "Bench" && containsAny(d.Player,position_string);}));
 		for (var i = 0; i <by_player.length; i++) {
 		by_player[i].player = by_player[i].key.split("_")[0];
 		by_player[i].week = Number(by_player[i].key.split("_")[1]);
@@ -175,7 +193,15 @@ return d.cum_wins;
 xScale.domain([1, d3.max(by_player, function(d) {return max_week;})]);
 var y_label;
 xAxis.ticks(max_week - 1);
-
+function containsAny(str, substrings) {
+        for (var i = 0; i != substrings.length; i++) {
+           var substring = substrings[i];
+           if (str.indexOf(substring) != - 1) {
+             return true;
+           }
+        }
+        return false; 
+    }
 
 if(number_option.options[number_option.selectedIndex].text == "Points") {
 y_label = "Cumulative Points";
@@ -251,7 +277,17 @@ text_svg.selectAll(".playerlabel")
 	d3.select("." + classes + ".graph_line").classed("hidden",false);}
 	else
 	{d3.select(this).classed("semihidden",true);
-	d3.select("." + classes + ".graph_line").classed("hidden",true);}});
+	d3.select("." + classes + ".graph_line").classed("hidden",true);}})
+	.on("mouseover",function(d) {
+	classes = d3.select(this).attr("class").split(" ")[0] + "." + d3.select(this).attr("class").split(" ")[1];
+d3.selectAll("path.graph_line").style("opacity",.2);
+
+d3.select("." + classes + ".graph_line").style("stroke-width","5px").style("opacity",1);
+})
+	.on("mouseout",function(d) {
+	classes = d3.select(this).attr("class").split(" ")[0] + "." + d3.select(this).attr("class").split(" ")[1];
+	d3.select("." + classes + ".graph_line").style("stroke-width","2px")
+d3.selectAll("path.graph_line").style("opacity",1);});;
 
 
 d3.selectAll("path.graph_line").on("mouseover",function(d) {
