@@ -258,16 +258,16 @@ text_svg.selectAll(".playerlabel")
 	.data(by_player2.sort((function(a, b) {
 	
 	if(number_option.options[number_option.selectedIndex].text == "Points") {
-	return d3.max(b.values, function(d) {return d.cum_points;}) - d3.max(a.values, function(d) {return d.cum_points;});
+	return b.values[max_week - 1].cum_points - a.values[max_week - 1].cum_points;
 	}
 	else
 	{
-	if(d3.max(b.values, function(d) {return d.cum_wins;}) == d3.max(a.values, function(d) {return d.cum_wins;}))
+	if(b.values[max_week - 1].cum_wins - a.values[max_week - 1].cum_wins)
 	{
-	return d3.max(b.values, function(d) {return d.cum_points;}) - d3.max(a.values, function(d) {return d.cum_points;});
+	return b.values[max_week - 1].cum_points - a.values[max_week - 1].cum_points;
 	}
 	else {
-	return d3.max(b.values, function(d) {return d.cum_wins;}) - d3.max(a.values, function(d) {return d.cum_wins;});
+	return b.values[max_week - 1].cum_wins - a.values[max_week - 1].cum_wins;
 	}
 	}
 	
