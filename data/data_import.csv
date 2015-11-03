@@ -11583,9 +11583,9 @@ Year,Week,Team,Vs,Slot,Player,Opponet,Score,Points
 2015,7,Mark Krizmanich,Andrew Lamb,Bench,"James Starks, GB RB  P",** BYE **,,--
 2015,7,Mark Krizmanich,Andrew Lamb,Bench,"Brandon McManus, Den K",** BYE **,,--
 2015,8,Andrew Lamb,Joe Young,QB,"Tom Brady, NE QB",Mia,» W 36-7,33.5
-2015,8,Andrew Lamb,Joe Young,RB,"Le'Veon Bell, Pit RB  D",Cin,» L 10-16,7
+2015,8,Andrew Lamb,Joe Young,RB,"Le'Veon Bell*, Pit RB  IR",Cin,» L 10-16,7
 2015,8,Andrew Lamb,Joe Young,RB/WR,"Todd Gurley, StL RB",SF,» W 27-6,24
-2015,8,Andrew Lamb,Joe Young,RB/WR,"Matt Forte, Chi RB  Q",Min,» L 20-23,10
+2015,8,Andrew Lamb,Joe Young,RB/WR,"Matt Forte, Chi RB  D",Min,» L 20-23,10
 2015,8,Andrew Lamb,Joe Young,WR,"Julio Jones, Atl WR",TB,» L 20-23,32
 2015,8,Andrew Lamb,Joe Young,TE,"Martellus Bennett, Chi TE",Min,» L 20-23,6
 2015,8,Andrew Lamb,Joe Young,FLEX,"Giovani Bernard, Cin RB",@Pit,» W 16-10,5
@@ -11600,11 +11600,11 @@ Year,Week,Team,Vs,Slot,Player,Opponet,Score,Points
 2015,8,Andrew Lamb,Joe Young,IR,"Carlos Hyde*, SF RB  O",@StL,» L 6-27,0
 2015,8,Billy Beirne,Parker King,QB,"Matt Ryan, Atl QB",TB,» L 20-23,22.5
 2015,8,Billy Beirne,Parker King,RB,"Justin Forsett, Bal RB",SD,» W 29-26,7
-2015,8,Billy Beirne,Parker King,RB/WR,"Davante Adams, GB WR  P",@Den,» L 10-29,1
-2015,8,Billy Beirne,Parker King,RB/WR,"T.Y. Hilton, Ind WR",@Car,» Mon 8:30,--
+2015,8,Billy Beirne,Parker King,RB/WR,"Davante Adams, GB WR",@Den,» L 10-29,1
+2015,8,Billy Beirne,Parker King,RB/WR,"T.Y. Hilton, Ind WR",@Car,» L 26-29,2
 2015,8,Billy Beirne,Parker King,WR,"DeAndre Hopkins, Hou WR",Ten,» W 20-6,23
 2015,8,Billy Beirne,Parker King,TE,"Jimmy Graham, Sea TE",@Dal,» W 13-12,14
-2015,8,Billy Beirne,Parker King,FLEX,"Ted Ginn Jr., Car WR",Ind,» Mon 8:30,--
+2015,8,Billy Beirne,Parker King,FLEX,"Ted Ginn Jr., Car WR",Ind,» W 29-26,8
 2015,8,Billy Beirne,Parker King,D/ST,Packers D/ST D/ST,@Den,» L 10-29,-2
 2015,8,Billy Beirne,Parker King,K,"Robbie Gould, Chi K",Min,» L 20-23,9
 2015,8,Billy Beirne,Parker King,Bench,"Cole Beasley, Dal WR",Sea,» L 12-13,0
@@ -11618,21 +11618,21 @@ Year,Week,Team,Vs,Slot,Player,Opponet,Score,Points
 2015,8,Tom Buckley,Mark Krizmanich,RB,"Rashad Jennings, NYG RB",@NO,» L 49-52,10
 2015,8,Tom Buckley,Mark Krizmanich,RB/WR,"Rueben Randle, NYG WR  Q",@NO,» L 49-52,10
 2015,8,Tom Buckley,Mark Krizmanich,RB/WR,"Dexter McCluster, Ten WR, RB",@Hou,» L 6-20,7
-2015,8,Tom Buckley,Mark Krizmanich,WR,"Keenan Allen, SD WR  Q",@Bal,» L 26-29,14
+2015,8,Tom Buckley,Mark Krizmanich,WR,"Keenan Allen*, SD WR  O",@Bal,» L 26-29,14
 2015,8,Tom Buckley,Mark Krizmanich,TE,"Crockett Gillmore, Bal TE",SD,» W 29-26,8
 2015,8,Tom Buckley,Mark Krizmanich,FLEX,"Michael Crabtree, Oak WR",NYJ,» W 34-20,23
-2015,8,Tom Buckley,Mark Krizmanich,D/ST,Panthers D/ST D/ST,Ind,» Mon 8:30,--
+2015,8,Tom Buckley,Mark Krizmanich,D/ST,Panthers D/ST D/ST,Ind,» W 29-26,9
 2015,8,Tom Buckley,Mark Krizmanich,K,"Justin Tucker, Bal K",SD,» W 29-26,20
 2015,8,Tom Buckley,Mark Krizmanich,Bench,"C.J. Anderson, Den RB",GB,» W 29-10,17
 2015,8,Tom Buckley,Mark Krizmanich,Bench,"Alfred Morris, Wsh RB",** BYE **,,--
 2015,8,Tom Buckley,Mark Krizmanich,Bench,"Joe Flacco, Bal QB",SD,» W 29-26,24.5
-2015,8,Tom Buckley,Mark Krizmanich,Bench,"Melvin Gordon, SD RB  P",@Bal,» L 26-29,10
-2015,8,Tom Buckley,Mark Krizmanich,Bench,"Kelvin Benjamin*, Car WR  IR",Ind,» Mon 8:30,--
+2015,8,Tom Buckley,Mark Krizmanich,Bench,"Melvin Gordon, SD RB",@Bal,» L 26-29,10
+2015,8,Tom Buckley,Mark Krizmanich,Bench,"Kelvin Benjamin*, Car WR  IR",Ind,» W 29-26,0
 2015,8,Tom Buckley,Mark Krizmanich,Bench,"Cecil Shorts III*, Hou WR  O",Ten,» W 20-6,0
 2015,8,Tom Buckley,Mark Krizmanich,IR,"David Cobb*, Ten RB  IR",@Hou,» L 6-20,0
-2015,8,JJ Burke,Ricky Garcia,QB,"Andrew Luck, Ind QB",@Car,» Mon 8:30,--
+2015,8,JJ Burke,Ricky Garcia,QB,"Andrew Luck, Ind QB",@Car,» L 26-29,16
 2015,8,JJ Burke,Ricky Garcia,RB,"Duke Johnson Jr., Cle RB",Ari,» L 20-34,8
-2015,8,JJ Burke,Ricky Garcia,RB/WR,"Lamar Miller, Mia RB",@NE,» L 7-36,13
+2015,8,JJ Burke,Ricky Garcia,RB/WR,"Lamar Miller, Mia RB  Q",@NE,» L 7-36,13
 2015,8,JJ Burke,Ricky Garcia,RB/WR,"A.J. Green, Cin WR",@Pit,» W 16-10,28
 2015,8,JJ Burke,Ricky Garcia,WR,"Marvin Jones, Cin WR",@Pit,» W 16-10,3
 2015,8,JJ Burke,Ricky Garcia,TE,"Jason Witten, Dal TE",Sea,» L 12-13,3
@@ -11644,14 +11644,14 @@ Year,Week,Team,Vs,Slot,Player,Opponet,Score,Points
 2015,8,JJ Burke,Ricky Garcia,Bench,"Michael Floyd, Ari WR",@Cle,» W 34-20,21
 2015,8,JJ Burke,Ricky Garcia,Bench,"Kamar Aiken, Bal WR",SD,» W 29-26,12
 2015,8,JJ Burke,Ricky Garcia,Bench,"Albert Wilson, KC WR",Det,» W 45-10,4
-2015,8,JJ Burke,Ricky Garcia,Bench,"Chris Polk, Hou RB  P",Ten,» W 20-6,2
+2015,8,JJ Burke,Ricky Garcia,Bench,"Chris Polk, Hou RB",Ten,» W 20-6,2
 2015,8,JJ Burke,Ricky Garcia,IR,,,,--
 2015,8,mike guiltinan,Jordan Hiller,QB,"Aaron Rodgers, GB QB",@Den,» L 10-29,7
 2015,8,mike guiltinan,Jordan Hiller,RB,"Latavius Murray, Oak RB",NYJ,» W 34-20,12
-2015,8,mike guiltinan,Jordan Hiller,RB/WR,"Odell Beckham Jr., NYG WR  P",@NO,» L 49-52,40
+2015,8,mike guiltinan,Jordan Hiller,RB/WR,"Odell Beckham Jr., NYG WR",@NO,» L 49-52,40
 2015,8,mike guiltinan,Jordan Hiller,RB/WR,"Mike Evans, TB WR",@Atl,» W 23-20,7
 2015,8,mike guiltinan,Jordan Hiller,WR,"Calvin Johnson, Det WR  Q",@KC,» L 10-45,13
-2015,8,mike guiltinan,Jordan Hiller,TE,"Vernon Davis, SF TE",@StL,» L 6-27,8
+2015,8,mike guiltinan,Jordan Hiller,TE,"Vernon Davis, Den TE",GB,» W 29-10,8
 2015,8,mike guiltinan,Jordan Hiller,FLEX,"Terrance Williams, Dal WR",Sea,» L 12-13,4
 2015,8,mike guiltinan,Jordan Hiller,D/ST,Giants D/ST D/ST,@NO,» L 49-52,0
 2015,8,mike guiltinan,Jordan Hiller,K,"Cairo Santos, KC K",Det,» W 45-10,9
@@ -11660,10 +11660,10 @@ Year,Week,Team,Vs,Slot,Player,Opponet,Score,Points
 2015,8,mike guiltinan,Jordan Hiller,Bench,"Marcus Mariota*, Ten QB  O",@Hou,» L 6-20,0
 2015,8,mike guiltinan,Jordan Hiller,Bench,"Jordan Reed, Wsh TE",** BYE **,,--
 2015,8,mike guiltinan,Jordan Hiller,Bench,"Allen Hurns, Jax WR",** BYE **,,--
-2015,8,mike guiltinan,Jordan Hiller,Bench,"Branden Oliver, SD RB",@Bal,» L 26-29,4
+2015,8,mike guiltinan,Jordan Hiller,Bench,"Branden Oliver, SD RB  Q",@Bal,» L 26-29,4
 2015,8,mike guiltinan,Jordan Hiller,IR,,,,--
 2015,8,Chris Hammitt,Mike DeRusso,QB,"Derek Carr, Oak QB",NYJ,» W 34-20,33
-2015,8,Chris Hammitt,Mike DeRusso,RB,"Charcandrick West, KC RB  P",Det,» W 45-10,21
+2015,8,Chris Hammitt,Mike DeRusso,RB,"Charcandrick West, KC RB",Det,» W 45-10,21
 2015,8,Chris Hammitt,Mike DeRusso,RB/WR,"Amari Cooper, Oak WR",NYJ,» W 34-20,9
 2015,8,Chris Hammitt,Mike DeRusso,RB/WR,"Stefon Diggs, Min WR",@Chi,» W 23-20,22
 2015,8,Chris Hammitt,Mike DeRusso,WR,"Larry Fitzgerald, Ari WR  P",@Cle,» W 34-20,21
@@ -11673,13 +11673,13 @@ Year,Week,Team,Vs,Slot,Player,Opponet,Score,Points
 2015,8,Chris Hammitt,Mike DeRusso,K,"Josh Brown, NYG K",@NO,» L 49-52,7
 2015,8,Chris Hammitt,Mike DeRusso,Bench,"DeMarco Murray, Phi RB",** BYE **,,--
 2015,8,Chris Hammitt,Mike DeRusso,Bench,"Sammy Watkins, Buf WR  Q",** BYE **,,--
-2015,8,Chris Hammitt,Mike DeRusso,Bench,"Colin Kaepernick, SF QB  P",@StL,» L 6-27,10
+2015,8,Chris Hammitt,Mike DeRusso,Bench,"Colin Kaepernick, SF QB",@StL,» L 6-27,10
 2015,8,Chris Hammitt,Mike DeRusso,Bench,"Charles Clay, Buf TE",** BYE **,,--
 2015,8,Chris Hammitt,Mike DeRusso,Bench,"Darren Sproles, Phi RB",** BYE **,,--
 2015,8,Chris Hammitt,Mike DeRusso,Bench,Bengals D/ST D/ST,@Pit,» W 16-10,13
 2015,8,Chris Hammitt,Mike DeRusso,IR,,,,--
 2015,8,Matthew Singer,Chris Curtin,QB,"Teddy Bridgewater, Min QB",@Chi,» W 23-20,13.5
-2015,8,Matthew Singer,Chris Curtin,RB,"Adrian Peterson, Min RB  P",@Chi,» W 23-20,12
+2015,8,Matthew Singer,Chris Curtin,RB,"Adrian Peterson, Min RB",@Chi,» W 23-20,12
 2015,8,Matthew Singer,Chris Curtin,RB/WR,"Stevie Johnson, SD WR",@Bal,» L 26-29,4
 2015,8,Matthew Singer,Chris Curtin,RB/WR,"Martavis Bryant, Pit WR",Cin,» L 10-16,8
 2015,8,Matthew Singer,Chris Curtin,WR,"Antonio Brown, Pit WR",Cin,» L 10-16,16
@@ -11691,7 +11691,7 @@ Year,Week,Team,Vs,Slot,Player,Opponet,Score,Points
 2015,8,Matthew Singer,Chris Curtin,Bench,"Jordan Matthews, Phi WR",** BYE **,,--
 2015,8,Matthew Singer,Chris Curtin,Bench,"LeSean McCoy, Buf RB",** BYE **,,--
 2015,8,Matthew Singer,Chris Curtin,Bench,"Karlos Williams, Buf RB  Q",** BYE **,,--
-2015,8,Matthew Singer,Chris Curtin,Bench,"Tyrod Taylor, Buf QB  Q",** BYE **,,--
+2015,8,Matthew Singer,Chris Curtin,Bench,"Tyrod Taylor, Buf QB  P",** BYE **,,--
 2015,8,Matthew Singer,Chris Curtin,Bench,"Josh Gordon, Cle WR  SSPD",Ari,» L 20-34,0
 2015,8,Matthew Singer,Chris Curtin,IR,,,,--
 2015,8,Chris Curtin,Matthew Singer,QB,"Philip Rivers, SD QB",@Bal,» L 26-29,27.5
@@ -11703,19 +11703,19 @@ Year,Week,Team,Vs,Slot,Player,Opponet,Score,Points
 2015,8,Chris Curtin,Matthew Singer,FLEX,"Antonio Gates, SD TE  P",@Bal,» L 26-29,9
 2015,8,Chris Curtin,Matthew Singer,D/ST,Patriots D/ST D/ST,Mia,» W 36-7,15
 2015,8,Chris Curtin,Matthew Singer,K,"Mason Crosby, GB K",@Den,» L 10-29,6
-2015,8,Chris Curtin,Matthew Singer,Bench,"Devin Funchess, Car WR",Ind,» Mon 8:30,--
+2015,8,Chris Curtin,Matthew Singer,Bench,"Devin Funchess, Car WR",Ind,» W 29-26,1
 2015,8,Chris Curtin,Matthew Singer,Bench,"Victor Cruz*, NYG WR  O",@NO,» L 49-52,0
 2015,8,Chris Curtin,Matthew Singer,Bench,"Danny Amendola, NE WR",Mia,» W 36-7,2
 2015,8,Chris Curtin,Matthew Singer,Bench,"Robert Woods, Buf WR",** BYE **,,--
-2015,8,Chris Curtin,Matthew Singer,Bench,"Jonathan Stewart, Car RB",Ind,» Mon 8:30,--
+2015,8,Chris Curtin,Matthew Singer,Bench,"Jonathan Stewart, Car RB",Ind,» W 29-26,13
 2015,8,Chris Curtin,Matthew Singer,Bench,"Blair Walsh, Min K",@Chi,» W 23-20,13
 2015,8,Chris Curtin,Matthew Singer,IR,,,,--
 2015,8,Mike DeRusso,Chris Hammitt,QB,"Carson Palmer, Ari QB",@Cle,» W 34-20,31
 2015,8,Mike DeRusso,Chris Hammitt,RB,"Danny Woodhead, SD RB",@Bal,» L 26-29,5
-2015,8,Mike DeRusso,Chris Hammitt,RB/WR,"Frank Gore, Ind RB",@Car,» Mon 8:30,--
-2015,8,Mike DeRusso,Chris Hammitt,RB/WR,"Jeremy Maclin, KC WR  P",Det,» W 45-10,12
+2015,8,Mike DeRusso,Chris Hammitt,RB/WR,"Frank Gore, Ind RB",@Car,» L 26-29,12
+2015,8,Mike DeRusso,Chris Hammitt,RB/WR,"Jeremy Maclin, KC WR",Det,» W 45-10,12
 2015,8,Mike DeRusso,Chris Hammitt,WR,"James Jones, GB WR",@Den,» L 10-29,1
-2015,8,Mike DeRusso,Chris Hammitt,TE,"Greg Olsen, Car TE",Ind,» Mon 8:30,--
+2015,8,Mike DeRusso,Chris Hammitt,TE,"Greg Olsen, Car TE",Ind,» W 29-26,19
 2015,8,Mike DeRusso,Chris Hammitt,FLEX,"Kendall Wright, Ten WR  Q",@Hou,» L 6-20,6
 2015,8,Mike DeRusso,Chris Hammitt,D/ST,Rams D/ST D/ST,SF,» W 27-6,12
 2015,8,Mike DeRusso,Chris Hammitt,K,"Chandler Catanzaro, Ari K",@Cle,» W 34-20,10
@@ -11723,27 +11723,27 @@ Year,Week,Team,Vs,Slot,Player,Opponet,Score,Points
 2015,8,Mike DeRusso,Chris Hammitt,Bench,"Allen Robinson, Jax WR",** BYE **,,--
 2015,8,Mike DeRusso,Chris Hammitt,Bench,"Eli Manning, NYG QB",@NO,» L 49-52,42
 2015,8,Mike DeRusso,Chris Hammitt,Bench,"David Johnson, Ari RB",@Cle,» W 34-20,6
-2015,8,Mike DeRusso,Chris Hammitt,Bench,"Ahmad Bradshaw, Ind RB",@Car,» Mon 8:30,--
+2015,8,Mike DeRusso,Chris Hammitt,Bench,"Ahmad Bradshaw, Ind RB",@Car,» L 26-29,3
 2015,8,Mike DeRusso,Chris Hammitt,Bench,"DeVante Parker, Mia WR  Q",@NE,» L 7-36,0
 2015,8,Mike DeRusso,Chris Hammitt,IR,"Breshad Perriman*, Bal WR  O",SD,» W 29-26,0
 2015,8,Joe Young,Andrew Lamb,QB,"Andy Dalton, Cin QB",@Pit,» W 16-10,11
 2015,8,Joe Young,Andrew Lamb,RB,"Ronnie Hillman, Den RB",GB,» W 29-10,19
 2015,8,Joe Young,Andrew Lamb,RB/WR,"Steve Smith Sr.*, Bal WR  O",SD,» W 29-26,13
-2015,8,Joe Young,Andrew Lamb,RB/WR,"Eric Decker, NYJ WR  P",@Oak,» L 20-34,18
-2015,8,Joe Young,Andrew Lamb,WR,"Willie Snead, NO WR",NYG,» W 52-49,24
-2015,8,Joe Young,Andrew Lamb,TE,"Travis Kelce, KC TE  P",Det,» W 45-10,16
+2015,8,Joe Young,Andrew Lamb,RB/WR,"Eric Decker, NYJ WR",@Oak,» L 20-34,18
+2015,8,Joe Young,Andrew Lamb,WR,"Willie Snead, NO WR",NYG,» W 52-49,25
+2015,8,Joe Young,Andrew Lamb,TE,"Travis Kelce, KC TE",Det,» W 45-10,16
 2015,8,Joe Young,Andrew Lamb,FLEX,"Anquan Boldin*, SF WR  O",@StL,» L 6-27,0
 2015,8,Joe Young,Andrew Lamb,D/ST,Texans D/ST D/ST,Ten,» W 20-6,20
-2015,8,Joe Young,Andrew Lamb,K,"Adam Vinatieri, Ind K",@Car,» Mon 8:30,--
+2015,8,Joe Young,Andrew Lamb,K,"Adam Vinatieri, Ind K",@Car,» L 26-29,17
 2015,8,Joe Young,Andrew Lamb,Bench,"Peyton Manning, Den QB",GB,» W 29-10,13
-2015,8,Joe Young,Andrew Lamb,Bench,"Andre Johnson, Ind WR",@Car,» Mon 8:30,--
+2015,8,Joe Young,Andrew Lamb,Bench,"Andre Johnson, Ind WR",@Car,» L 26-29,18
 2015,8,Joe Young,Andrew Lamb,Bench,"Roddy White, Atl WR",TB,» L 20-23,4
 2015,8,Joe Young,Andrew Lamb,Bench,"Knile Davis, KC RB",Det,» W 45-10,0
 2015,8,Joe Young,Andrew Lamb,Bench,"Matt Jones, Wsh RB",** BYE **,,--
 2015,8,Joe Young,Andrew Lamb,Bench,"Ryan Tannehill, Mia QB",@NE,» L 7-36,10.5
 2015,8,Joe Young,Andrew Lamb,IR,"Kevin White*, Chi WR  O",Min,» L 20-23,0
-2015,8,Ricky Garcia,JJ Burke,QB,"Drew Brees, NO QB",NYG,» W 52-49,51
-2015,8,Ricky Garcia,JJ Burke,RB,"Dion Lewis, NE RB  P",Mia,» W 36-7,22
+2015,8,Ricky Garcia,JJ Burke,QB,"Drew Brees, NO QB",NYG,» W 52-49,48.5
+2015,8,Ricky Garcia,JJ Burke,RB,"Dion Lewis, NE RB",Mia,» W 36-7,22
 2015,8,Ricky Garcia,JJ Burke,RB/WR,"Chris Johnson, Ari RB",@Cle,» W 34-20,6
 2015,8,Ricky Garcia,JJ Burke,RB/WR,"Rishard Matthews, Mia WR",@NE,» L 7-36,13
 2015,8,Ricky Garcia,JJ Burke,WR,"John Brown, Ari WR  P",@Cle,» W 34-20,0
@@ -11758,8 +11758,8 @@ Year,Week,Team,Vs,Slot,Player,Opponet,Score,Points
 2015,8,Ricky Garcia,JJ Burke,Bench,"Theo Riddick, Det RB",@KC,» L 10-45,10
 2015,8,Ricky Garcia,JJ Burke,Bench,"Austin Seferian-Jenkins*, TB TE  O",@Atl,» W 23-20,0
 2015,8,Ricky Garcia,JJ Burke,IR,"Jordy Nelson*, GB WR  IR",@Den,» L 10-29,0
-2015,8,Jordan Hiller,mike guiltinan,QB,"Cam Newton, Car QB",Ind,» Mon 8:30,--
-2015,8,Jordan Hiller,mike guiltinan,RB,"Marshawn Lynch, Sea RB  P",@Dal,» W 13-12,10
+2015,8,Jordan Hiller,mike guiltinan,QB,"Cam Newton, Car QB",Ind,» W 29-26,18.5
+2015,8,Jordan Hiller,mike guiltinan,RB,"Marshawn Lynch, Sea RB",@Dal,» W 13-12,10
 2015,8,Jordan Hiller,mike guiltinan,RB/WR,"Devonta Freeman, Atl RB",TB,» L 20-23,18
 2015,8,Jordan Hiller,mike guiltinan,RB/WR,"Brandin Cooks, NO WR",NYG,» W 52-49,26
 2015,8,Jordan Hiller,mike guiltinan,WR,"Brandon Marshall, NYJ WR  Q",@Oak,» L 20-34,19
@@ -11774,11 +11774,11 @@ Year,Week,Team,Vs,Slot,Player,Opponet,Score,Points
 2015,8,Jordan Hiller,mike guiltinan,Bench,"Tevin Coleman, Atl RB",TB,» L 20-23,3
 2015,8,Jordan Hiller,mike guiltinan,Bench,"Tony Romo*, Dal QB  IR",Sea,» L 12-13,0
 2015,8,Jordan Hiller,mike guiltinan,IR,"Arian Foster*, Hou RB  IR",Ten,» W 20-6,0
-2015,8,Parker King,Billy Beirne,QB,"Matthew Stafford, Det QB  P",@KC,» L 10-45,10
-2015,8,Parker King,Billy Beirne,RB,"Chris Ivory, NYJ RB  P",@Oak,» L 20-34,6
+2015,8,Parker King,Billy Beirne,QB,"Matthew Stafford, Det QB",@KC,» L 10-45,10
+2015,8,Parker King,Billy Beirne,RB,"Chris Ivory, NYJ RB",@Oak,» L 20-34,6
 2015,8,Parker King,Billy Beirne,RB/WR,"Golden Tate, Det WR",@KC,» L 10-45,11
-2015,8,Parker King,Billy Beirne,RB/WR,"Emmanuel Sanders, Den WR  P",GB,» W 29-10,4
-2015,8,Parker King,Billy Beirne,WR,"Donte Moncrief, Ind WR",@Car,» Mon 8:30,--
+2015,8,Parker King,Billy Beirne,RB/WR,"Emmanuel Sanders, Den WR",GB,» W 29-10,4
+2015,8,Parker King,Billy Beirne,WR,"Donte Moncrief, Ind WR",@Car,» L 26-29,3
 2015,8,Parker King,Billy Beirne,TE,"Gary Barnidge, Cle TE",Ari,» L 20-34,18
 2015,8,Parker King,Billy Beirne,FLEX,"Brandon LaFell, NE WR",Mia,» W 36-7,8
 2015,8,Parker King,Billy Beirne,D/ST,Cardinals D/ST D/ST,@Cle,» W 34-20,5
@@ -11790,7 +11790,7 @@ Year,Week,Team,Vs,Slot,Player,Opponet,Score,Points
 2015,8,Parker King,Billy Beirne,Bench,"Torrey Smith, SF WR",@StL,» L 6-27,3
 2015,8,Parker King,Billy Beirne,Bench,"Bishop Sankey, Ten RB",@Hou,» L 6-20,-2
 2015,8,Parker King,Billy Beirne,IR,"Percy Harvin, Buf WR  D",** BYE **,,--
-2015,8,Mark Krizmanich,Tom Buckley,QB,"Ben Roethlisberger, Pit QB  P",Cin,» L 10-16,10.5
+2015,8,Mark Krizmanich,Tom Buckley,QB,"Ben Roethlisberger, Pit QB",Cin,» L 10-16,10.5
 2015,8,Mark Krizmanich,Tom Buckley,RB,"Darren McFadden, Dal RB",Sea,» L 12-13,16
 2015,8,Mark Krizmanich,Tom Buckley,RB/WR,"Randall Cobb, GB WR",@Den,» L 10-29,9
 2015,8,Mark Krizmanich,Tom Buckley,RB/WR,"Jarvis Landry, Mia WR",@NE,» L 7-36,13
@@ -11802,7 +11802,7 @@ Year,Week,Team,Vs,Slot,Player,Opponet,Score,Points
 2015,8,Mark Krizmanich,Tom Buckley,Bench,"Mike Wallace, Min WR",@Chi,» W 23-20,0
 2015,8,Mark Krizmanich,Tom Buckley,Bench,"Shane Vereen, NYG RB",@NO,» L 49-52,20
 2015,8,Mark Krizmanich,Tom Buckley,Bench,"Vincent Jackson*, TB WR  O",@Atl,» W 23-20,0
-2015,8,Mark Krizmanich,Tom Buckley,Bench,"James Starks, GB RB  P",@Den,» L 10-29,2
+2015,8,Mark Krizmanich,Tom Buckley,Bench,"James Starks, GB RB",@Den,» L 10-29,2
 2015,8,Mark Krizmanich,Tom Buckley,Bench,"Ryan Fitzpatrick, NYJ QB  Q",@Oak,» L 20-34,2
 2015,8,Mark Krizmanich,Tom Buckley,Bench,"Kai Forbath, NO K",NYG,» W 52-49,12
 2015,8,Mark Krizmanich,Tom Buckley,IR,,,,--
