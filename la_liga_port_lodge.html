@@ -86,7 +86,7 @@ var position_string;
 
 // setup x 
 var xValue = function(d) { return d.Age;}, // data -> value
-    xScale = d3.scale.linear().rangeRound([0, width]), // value -> display
+    xScale = d3.scale.ordinal().rangePoints([0, width]), // value -> display
     xMap = function(d) { return xScale(xValue(d));}, // data -> display
     xAxis = d3.svg.axis().scale(xScale).orient("bottom");
 var formatPercent = d3.format("%");
@@ -136,6 +136,7 @@ var csv_data = d3.csv("data/data_import.csv", function(error, data) {
  d3.select("#year").selectAll(".option").data(years).enter().append("option")
 	.attr("value",function(d) {return d.key;})
 	.text(function(d) {return d.key;});
+d3.select("#year").append("option").attr("value","all").text("All");
  d3.select("#year").on("change",create_graph);
 d3.select("#points_or_wins").on("change",create_graph);
 d3.selectAll(".position_check").on("change",create_graph);
@@ -152,25 +153,39 @@ if(document.getElementById(pos_checkboxes[i]).checked == true) // if position is
 }
 
 number_option = document.getElementById("points_or_wins");
+year_option = document.getElementById("year");
 
 var valueline = d3.svg.line()
 .interpolate("linear")
-.x(function(d) { return xScale(d.week); })
+.x(function(d) {
+ return xScale(d.week); })
 .y(function(d) { if(number_option.options[number_option.selectedIndex].text == "Points") {
 return yScale(d.cum_points);}
 else {
 return yScale(d.cum_wins);
 } });
 
-year_option = document.getElementById("year");
-data_year = data.filter(function(d) {return d.Year == year_option.options[year_option.selectedIndex].text;});
+data_year = data.filter(function(d) {if(year_option.options[year_option.selectedIndex].text == "All")
+{
+	return true;
+}
+else
+{
+	return d.Year == year_option.options[year_option.selectedIndex].text;
+	}
+});
+
 by_player = d3.nest()
-	.key(function(d) {return d.Team+"_"+d.Week+"_"+d.Vs;})
+	.key(function(d) {if(year_option.options[year_option.selectedIndex].text == "All")
+	{return d.Team+"_"+d.Year+"-"+("00"+d.Week).slice(-2)+"_"+d.Vs;}
+	
+	else
+	{return d.Team+"_"+d.Week+"_"+d.Vs;}})
 	.rollup(function(totals) {return {"Points": d3.sum(totals, function(d) {return d.Points;})}})
 	.entries(data_year.filter(function(d) {return d.Slot != "Bench" && containsAny(d.Player,position_string);}));
 		for (var i = 0; i <by_player.length; i++) {
 		by_player[i].player = by_player[i].key.split("_")[0];
-		by_player[i].week = Number(by_player[i].key.split("_")[1]);
+		by_player[i].week = by_player[i].key.split("_")[1];
 		by_player[i].opponent = by_player[i].key.split("_")[2];
 		by_player[i].win = 0;
 		by_player[i].cum_points = 0;
@@ -192,8 +207,6 @@ by_player = d3.nest()
 			}
 
 		}}	
-
-max_week = d3.max(by_player, function(d) {return d.week;});
 d3.selectAll(".label").remove();
 
 yScale.domain([0, d3.max(by_player, function(d) {if(number_option.options[number_option.selectedIndex].text == "Points") {
@@ -201,9 +214,8 @@ return d.cum_points;}
 else {
 return d.cum_wins;
 }})]);
-xScale.domain([1, d3.max(by_player, function(d) {return max_week;})]);
+xScale.domain(by_player.map(function(d) {return d.week;}));
 var y_label;
-xAxis.ticks(max_week - 1);
 function containsAny(str, substrings) {
         for (var i = 0; i != substrings.length; i++) {
            var substring = " " + substrings[i] + " ";
@@ -222,6 +234,8 @@ else {
 y_label = "Wins";
 yAxis.ticks(d3.max(by_player, function(d) {return d.cum_wins;}) + 1);
 }
+var tick_frequency = Math.round(xScale.domain().length / 20);
+xAxis.tickValues(xScale.domain().filter(function(d, i) {return !(i % tick_frequency);}));
 
 
   svg.append("g")
@@ -267,18 +281,17 @@ test_data = player
 text_svg.selectAll(".playerlabel").remove();
 text_svg.selectAll(".playerlabel")
 	.data(by_player2.sort((function(a, b) {
-	
 	if(number_option.options[number_option.selectedIndex].text == "Points") {
-	return b.values[max_week - 1].cum_points - a.values[max_week - 1].cum_points;
+	return b.values[b.values.length - 1].cum_points - a.values[a.values.length - 1].cum_points;
 	}
 	else
 	{
-	if(b.values[max_week - 1].cum_wins == a.values[max_week - 1].cum_wins)
+	if(b.values[b.values.length - 1].cum_wins == a.values[a.values.length - 1].cum_wins)
 	{
-	return b.values[max_week - 1].cum_points - a.values[max_week - 1].cum_points;
+	return b.values[b.values.length - 1].cum_points - a.values[a.values.length - 1].cum_points;
 	}
 	else {
-	return b.values[max_week - 1].cum_wins - a.values[max_week - 1].cum_wins;
+	return b.values[b.values.length - 1].cum_wins - a.values[a.values.length - 1].cum_wins;
 	}
 	}
 	
