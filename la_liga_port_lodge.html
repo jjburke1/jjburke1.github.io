@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
-
-<style>
-body {
-  font: 11px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-path {
-stroke: black;
-stroke-width: 2;
-fill: none;
-}
-
-.dot {
-  stroke: #000;
-}
-
-.tooltip {
-  position: absolute;
-  width: 200px;
-  height: 28px;
-  pointer-events: none;
-}
-
-.semihidden {
-	opacity: .3
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<title>La Liga Port Lodge</title>
+	<style>
+	body {
+	  font: 11px sans-serif;
 	}
-	
-.hidden {
-	pointer-events: none;
-	display: none;
+
+	.axis path,
+	.axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
 	}
-</style>
+	path {
+	stroke: black;
+	stroke-width: 2;
+	fill: none;
+	}
+
+	.dot {
+	  stroke: #000;
+	}
+
+	.tooltip {
+	  position: absolute;
+	  width: 200px;
+	  height: 28px;
+	  pointer-events: none;
+	}
+
+	.semihidden {
+		opacity: .3
+		}
+
+	.hidden {
+		pointer-events: none;
+		display: none;
+		}
+	</style>
+</head>
 <body>
 <select id = "year">
 </select>
