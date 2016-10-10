@@ -180,7 +180,7 @@ by_player = d3.nest()
 	{return d.Team+"_"+d.Year+"-"+("00"+d.Week).slice(-2)+"_"+d.Vs;}
 	
 	else
-	{return d.Team+"_"+d.Week+"_"+d.Vs;}})
+	{return d.Team+"_"+("00"+d.Week).slice(-2)+"_"+d.Vs;}})
 	.rollup(function(totals) {return {"Points": d3.sum(totals, function(d) {return d.Points;})}})
 	.entries(data_year.filter(function(d) {return d.Slot != "Bench" && containsAny(d.Player,position_string);}));
 		for (var i = 0; i <by_player.length; i++) {
