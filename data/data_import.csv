@@ -14872,3 +14872,227 @@ Year,Week,Team,Vs,Slot,Player,Opponet,Score,Points
 2016,7,Mark Krizmanich,Ricky Garcia,Bench,"Adam Humphries, TB WR",@SF,» W 34-17,3
 2016,7,Mark Krizmanich,Ricky Garcia,Bench,"Josh Ferguson, Ind RB",@Ten,» W 34-26,0
 2016,7,Mark Krizmanich,Ricky Garcia,IR,,,,--
+2016,8,Andrew Lamb,Joe Young,QB,"Matt Ryan, Atl QB",GB,» W 33-32,26.5
+2016,8,Andrew Lamb,Joe Young,RB,"Giovani Bernard, Cin RB",Wsh,» T 27-27,13
+2016,8,Andrew Lamb,Joe Young,RB/WR,"Jeremy Hill, Cin RB",Wsh,» T 27-27,14
+2016,8,Andrew Lamb,Joe Young,RB/WR,"Cordarrelle Patterson, Min WR",@Chi,» L 10-20,6
+2016,8,Andrew Lamb,Joe Young,WR,"Michael Thomas, NO WR",Sea,» W 25-20,12
+2016,8,Andrew Lamb,Joe Young,TE,"Jimmy Graham, Sea TE",@NO,» L 20-25,6
+2016,8,Andrew Lamb,Joe Young,FLEX,"Terrelle Pryor Sr., Cle WR",NYJ,» L 28-31,18
+2016,8,Andrew Lamb,Joe Young,D/ST,Seahawks D/ST D/ST,@NO,» L 20-25,9
+2016,8,Andrew Lamb,Joe Young,K,"Mike Nugent, Cin K",Wsh,» T 27-27,2
+2016,8,Andrew Lamb,Joe Young,Bench,"Todd Gurley, LA RB",** BYE **,,--
+2016,8,Andrew Lamb,Joe Young,Bench,"Mike Wallace, Bal WR",** BYE **,,--
+2016,8,Andrew Lamb,Joe Young,Bench,"Pierre Garcon, Wsh WR",@Cin,» T 27-27,12
+2016,8,Andrew Lamb,Joe Young,Bench,Dolphins D/ST D/ST,** BYE **,,--
+2016,8,Andrew Lamb,Joe Young,Bench,"Tyler Lockett, Sea WR",@NO,» L 20-25,7
+2016,8,Andrew Lamb,Joe Young,Bench,"C.J. Prosise, Sea RB",@NO,» L 20-25,14
+2016,8,Andrew Lamb,Joe Young,IR,"Vincent Jackson*, TB WR  IR",Oak,» L 24-30,0
+2016,8,Billy Beirne,JJ Burke,QB,"Kirk Cousins, Wsh QB",@Cin,» T 27-27,27.5
+2016,8,Billy Beirne,JJ Burke,RB,"DeMarco Murray, Ten RB  Q",Jax,» W 36-22,19
+2016,8,Billy Beirne,JJ Burke,RB/WR,"Devontae Booker, Den RB",SD,» W 27-19,17
+2016,8,Billy Beirne,JJ Burke,RB/WR,"Christine Michael, Sea RB",@NO,» L 20-25,11
+2016,8,Billy Beirne,JJ Burke,WR,"Dez Bryant, Dal WR",Phi,» W 29-23,21
+2016,8,Billy Beirne,JJ Burke,TE,"Delanie Walker, Ten TE",Jax,» W 36-22,11
+2016,8,Billy Beirne,JJ Burke,FLEX,"Jeremy Maclin, KC WR",@Ind,» W 30-14,13
+2016,8,Billy Beirne,JJ Burke,D/ST,Chiefs D/ST D/ST,@Ind,» W 30-14,11
+2016,8,Billy Beirne,JJ Burke,K,"Brandon McManus, Den K",SD,» W 27-19,9
+2016,8,Billy Beirne,JJ Burke,Bench,"LeSean McCoy*, Buf RB  O",NE,» L 25-41,0
+2016,8,Billy Beirne,JJ Burke,Bench,"Derrick Henry, Ten RB",Jax,» W 36-22,19
+2016,8,Billy Beirne,JJ Burke,Bench,"Tevin Coleman*, Atl RB  O",GB,» W 33-32,0
+2016,8,Billy Beirne,JJ Burke,Bench,"Mike Gillislee, Buf RB",NE,» L 25-41,17
+2016,8,Billy Beirne,JJ Burke,Bench,"Jack Doyle, Ind TE",KC,» L 14-30,5
+2016,8,Billy Beirne,JJ Burke,Bench,"Kenneth Dixon, Bal RB",** BYE **,,--
+2016,8,Billy Beirne,JJ Burke,IR,"Ben Roethlisberger, Pit QB  Q",** BYE **,,--
+2016,8,Tom Buckley,Matthew Singer,QB,"Andrew Luck, Ind QB",KC,» L 14-30,19.5
+2016,8,Tom Buckley,Matthew Singer,RB,"Jonathan Stewart, Car RB",Ari,» W 30-20,22
+2016,8,Tom Buckley,Matthew Singer,RB/WR,"Willie Snead, NO WR",Sea,» W 25-20,11
+2016,8,Tom Buckley,Matthew Singer,RB/WR,"Mohamed Sanu, Atl WR",GB,» W 33-32,23
+2016,8,Tom Buckley,Matthew Singer,WR,"Kelvin Benjamin, Car WR",Ari,» W 30-20,9
+2016,8,Tom Buckley,Matthew Singer,TE,"Antonio Gates, SD TE",@Den,» L 19-27,13
+2016,8,Tom Buckley,Matthew Singer,FLEX,"Tyrell Williams, SD WR",@Den,» L 19-27,1
+2016,8,Tom Buckley,Matthew Singer,D/ST,Raiders D/ST D/ST,@TB,» W 30-24,1
+2016,8,Tom Buckley,Matthew Singer,K,"Adam Vinatieri, Ind K",KC,» L 14-30,2
+2016,8,Tom Buckley,Matthew Singer,Bench,"Carlos Hyde, SF RB  Q",** BYE **,,--
+2016,8,Tom Buckley,Matthew Singer,Bench,"Arian Foster, Mia RB",** BYE **,,--
+2016,8,Tom Buckley,Matthew Singer,Bench,"Jason Witten, Dal TE",Phi,» W 29-23,9
+2016,8,Tom Buckley,Matthew Singer,Bench,"Darren Sproles, Phi RB",@Dal,» L 23-29,14
+2016,8,Tom Buckley,Matthew Singer,Bench,"Eddie Royal*, Chi WR  O",Min,» W 20-10,0
+2016,8,Tom Buckley,Matthew Singer,Bench,"Shaun Draughn, SF RB",** BYE **,,--
+2016,8,Tom Buckley,Matthew Singer,IR,"Adrian Peterson*, Min RB  IR",@Chi,» L 10-20,0
+2016,8,JJ Burke,Billy Beirne,QB,"Alex Smith, KC QB  Q",@Ind,» W 30-14,9.5
+2016,8,JJ Burke,Billy Beirne,RB,"Mark Ingram, NO RB",Sea,» W 25-20,-2
+2016,8,JJ Burke,Billy Beirne,RB/WR,"Doug Baldwin, Sea WR",@NO,» L 20-25,9
+2016,8,JJ Burke,Billy Beirne,RB/WR,"Matt Asiata, Min RB",@Chi,» L 10-20,9
+2016,8,JJ Burke,Billy Beirne,WR,"Brandin Cooks, NO WR",Sea,» W 25-20,14
+2016,8,JJ Burke,Billy Beirne,TE,"Rob Gronkowski, NE TE",@Buf,» W 41-25,22
+2016,8,JJ Burke,Billy Beirne,FLEX,"Stefon Diggs, Min WR",@Chi,» L 10-20,21
+2016,8,JJ Burke,Billy Beirne,D/ST,Cardinals D/ST D/ST,@Car,» L 20-30,-1
+2016,8,JJ Burke,Billy Beirne,K,"Sebastian Janikowski, Oak K",@TB,» W 30-24,4
+2016,8,JJ Burke,Billy Beirne,Bench,"Randall Cobb*, GB WR  O",@Atl,» L 32-33,0
+2016,8,JJ Burke,Billy Beirne,Bench,"Michael Floyd, Ari WR",@Car,» L 20-30,0
+2016,8,JJ Burke,Billy Beirne,Bench,"Adam Thielen, Min WR",@Chi,» L 10-20,7
+2016,8,JJ Burke,Billy Beirne,Bench,"Colin Kaepernick, SF QB",** BYE **,,--
+2016,8,JJ Burke,Billy Beirne,Bench,"Charcandrick West, KC RB",@Ind,» W 30-14,7
+2016,8,JJ Burke,Billy Beirne,Bench,"Jeremy Langford, Chi RB",Min,» W 20-10,2
+2016,8,JJ Burke,Billy Beirne,IR,"Corey Coleman*, Cle WR  O",NYJ,» L 28-31,0
+2016,8,mike guiltinan,Parker King,QB,"Dak Prescott, Dal QB",Phi,» W 29-23,27.5
+2016,8,mike guiltinan,Parker King,RB,"Lamar Miller, Hou RB",Det,» W 20-13,13
+2016,8,mike guiltinan,Parker King,RB/WR,"Jordan Matthews, Phi WR",@Dal,» L 23-29,23
+2016,8,mike guiltinan,Parker King,RB/WR,"Will Fuller V, Hou WR  Q",Det,» W 20-13,3
+2016,8,mike guiltinan,Parker King,WR,"Allen Hurns, Jax WR",@Ten,» L 22-36,22
+2016,8,mike guiltinan,Parker King,TE,"Jordan Reed, Wsh TE",@Cin,» T 27-27,24
+2016,8,mike guiltinan,Parker King,FLEX,"Kyle Rudolph, Min TE",@Chi,» L 10-20,8
+2016,8,mike guiltinan,Parker King,D/ST,Eagles D/ST D/ST,@Dal,» L 23-29,0
+2016,8,mike guiltinan,Parker King,K,"Dan Bailey, Dal K",Phi,» W 29-23,12
+2016,8,mike guiltinan,Parker King,Bench,"Jamaal Charles*, KC RB  O",@Ind,» W 30-14,0
+2016,8,mike guiltinan,Parker King,Bench,"Sterling Shepard, NYG WR",** BYE **,,--
+2016,8,mike guiltinan,Parker King,Bench,"John Brown, Ari WR",@Car,» L 20-30,14
+2016,8,mike guiltinan,Parker King,Bench,"Tyrod Taylor, Buf QB",NE,» L 25-41,18.5
+2016,8,mike guiltinan,Parker King,Bench,"Vernon Davis, Wsh TE",@Cin,» T 27-27,14
+2016,8,mike guiltinan,Parker King,Bench,"Josh Lambo, SD K",@Den,» L 19-27,0
+2016,8,mike guiltinan,Parker King,IR,,,,--
+2016,8,Chris Hammitt,Mike DeRusso,QB,"Jameis Winston, TB QB",Oak,» L 24-30,19.5
+2016,8,Chris Hammitt,Mike DeRusso,RB,"Ezekiel Elliott, Dal RB",Phi,» W 29-23,18
+2016,8,Chris Hammitt,Mike DeRusso,RB/WR,"Melvin Gordon, SD RB",@Den,» L 19-27,19
+2016,8,Chris Hammitt,Mike DeRusso,RB/WR,"Larry Fitzgerald, Ari WR  Q",@Car,» L 20-30,17
+2016,8,Chris Hammitt,Mike DeRusso,WR,"T.Y. Hilton, Ind WR",KC,» L 14-30,3
+2016,8,Chris Hammitt,Mike DeRusso,TE,"C.J. Fiedorowicz, Hou TE",Det,» W 20-13,15
+2016,8,Chris Hammitt,Mike DeRusso,FLEX,"Golden Tate, Det WR",@Hou,» L 13-20,11
+2016,8,Chris Hammitt,Mike DeRusso,D/ST,Vikings D/ST D/ST,@Chi,» L 10-20,1
+2016,8,Chris Hammitt,Mike DeRusso,K,"Caleb Sturgis, Phi K",@Dal,» L 23-29,13
+2016,8,Chris Hammitt,Mike DeRusso,Bench,"Rashad Jennings, NYG RB",** BYE **,,--
+2016,8,Chris Hammitt,Mike DeRusso,Bench,"Josh Gordon, Cle WR  SSPD",NYJ,» L 28-31,0
+2016,8,Chris Hammitt,Mike DeRusso,Bench,"Julius Thomas, Jax TE",@Ten,» L 22-36,11
+2016,8,Chris Hammitt,Mike DeRusso,Bench,"Derek Carr, Oak QB",@TB,» W 30-24,40
+2016,8,Chris Hammitt,Mike DeRusso,Bench,"Cameron Meredith, Chi WR",Min,» W 20-10,3
+2016,8,Chris Hammitt,Mike DeRusso,Bench,"Dennis Pitta, Bal TE",** BYE **,,--
+2016,8,Chris Hammitt,Mike DeRusso,IR,"Jerick McKinnon*, Min RB  O",@Chi,» L 10-20,0
+2016,8,Matthew Singer,Tom Buckley,QB,"Tom Brady, NE QB",@Buf,» W 41-25,33
+2016,8,Matthew Singer,Tom Buckley,RB,"James White, NE RB",@Buf,» W 41-25,4
+2016,8,Matthew Singer,Tom Buckley,RB/WR,"DeAndre Hopkins, Hou WR",Det,» W 20-13,8
+2016,8,Matthew Singer,Tom Buckley,RB/WR,"Jeff Janis, GB WR",@Atl,» L 32-33,13
+2016,8,Matthew Singer,Tom Buckley,WR,"Mike Evans, TB WR",Oak,» L 24-30,11
+2016,8,Matthew Singer,Tom Buckley,TE,"Travis Kelce, KC TE",@Ind,» W 30-14,23
+2016,8,Matthew Singer,Tom Buckley,FLEX,"Latavius Murray, Oak RB",@TB,» W 30-24,11
+2016,8,Matthew Singer,Tom Buckley,D/ST,Patriots D/ST D/ST,@Buf,» W 41-25,1
+2016,8,Matthew Singer,Tom Buckley,K,"Steven Hauschka, Sea K",@NO,» L 20-25,9
+2016,8,Matthew Singer,Tom Buckley,Bench,"Antonio Brown, Pit WR  Q",** BYE **,,--
+2016,8,Matthew Singer,Tom Buckley,Bench,"Martellus Bennett, NE TE",@Buf,» W 41-25,7
+2016,8,Matthew Singer,Tom Buckley,Bench,"Odell Beckham Jr., NYG WR",** BYE **,,--
+2016,8,Matthew Singer,Tom Buckley,Bench,"Chris Hogan, NE WR",@Buf,» W 41-25,20
+2016,8,Matthew Singer,Tom Buckley,Bench,"Ty Montgomery*, GB WR, RB  O",@Atl,» L 32-33,0
+2016,8,Matthew Singer,Tom Buckley,Bench,"Justin Tucker, Bal K",** BYE **,,--
+2016,8,Matthew Singer,Tom Buckley,IR,"Thomas Rawls*, Sea RB  O",@NO,» L 20-25,0
+2016,8,Chris Curtin,Ricky Garcia,QB,"Philip Rivers, SD QB",@Den,» L 19-27,14
+2016,8,Chris Curtin,Ricky Garcia,RB,"Jordan Howard, Chi RB",Min,» W 20-10,29
+2016,8,Chris Curtin,Ricky Garcia,RB/WR,"Rishard Matthews, Ten WR",Jax,» W 36-22,13
+2016,8,Chris Curtin,Ricky Garcia,RB/WR,"Quincy Enunwa, NYJ WR",@Cle,» W 31-28,19
+2016,8,Chris Curtin,Ricky Garcia,WR,"Alshon Jeffery, Chi WR",Min,» W 20-10,16
+2016,8,Chris Curtin,Ricky Garcia,TE,"Zach Miller, Chi TE",Min,» W 20-10,15
+2016,8,Chris Curtin,Ricky Garcia,FLEX,"Tyler Eifert, Cin TE",Wsh,» T 27-27,25
+2016,8,Chris Curtin,Ricky Garcia,D/ST,Bengals D/ST D/ST,Wsh,» T 27-27,2
+2016,8,Chris Curtin,Ricky Garcia,K,"Dustin Hopkins, Wsh K",@Cin,» T 27-27,8
+2016,8,Chris Curtin,Ricky Garcia,Bench,"Le'Veon Bell, Pit RB",** BYE **,,--
+2016,8,Chris Curtin,Ricky Garcia,Bench,"Doug Martin*, TB RB  O",Oak,» L 24-30,0
+2016,8,Chris Curtin,Ricky Garcia,Bench,"DeAngelo Williams, Pit RB  Q",** BYE **,,--
+2016,8,Chris Curtin,Ricky Garcia,Bench,"Steve Smith Sr., Bal WR  Q",** BYE **,,--
+2016,8,Chris Curtin,Ricky Garcia,Bench,"Terrance West, Bal RB",** BYE **,,--
+2016,8,Chris Curtin,Ricky Garcia,Bench,"Eli Rogers, Pit WR",** BYE **,,--
+2016,8,Chris Curtin,Ricky Garcia,IR,,,,--
+2016,8,Mike DeRusso,Chris Hammitt,QB,"Carson Palmer, Ari QB",@Car,» L 20-30,25.5
+2016,8,Mike DeRusso,Chris Hammitt,RB,"David Johnson, Ari RB",@Car,» L 20-30,17
+2016,8,Mike DeRusso,Chris Hammitt,RB/WR,"Amari Cooper, Oak WR",@TB,» W 30-24,35
+2016,8,Mike DeRusso,Chris Hammitt,RB/WR,"Marvin Jones, Det WR",@Hou,» L 13-20,6
+2016,8,Mike DeRusso,Chris Hammitt,WR,"Allen Robinson, Jax WR",@Ten,» L 22-36,13
+2016,8,Mike DeRusso,Chris Hammitt,TE,"Coby Fleener, NO TE",Sea,» W 25-20,7
+2016,8,Mike DeRusso,Chris Hammitt,FLEX,"Spencer Ware, KC RB  Q",@Ind,» W 30-14,5
+2016,8,Mike DeRusso,Chris Hammitt,D/ST,Titans D/ST D/ST,Jax,» W 36-22,3
+2016,8,Mike DeRusso,Chris Hammitt,K,"Matt Bryant, Atl K",GB,» W 33-32,10
+2016,8,Mike DeRusso,Chris Hammitt,Bench,"Donte Moncrief, Ind WR",KC,» L 14-30,14
+2016,8,Mike DeRusso,Chris Hammitt,Bench,"DeVante Parker, Mia WR",** BYE **,,--
+2016,8,Mike DeRusso,Chris Hammitt,Bench,"LeGarrette Blount, NE RB",@Buf,» W 41-25,10
+2016,8,Mike DeRusso,Chris Hammitt,Bench,"DeAndre Washington, Oak RB",@TB,» W 30-24,3
+2016,8,Mike DeRusso,Chris Hammitt,Bench,"Andy Dalton, Cin QB",Wsh,» T 27-27,21.5
+2016,8,Mike DeRusso,Chris Hammitt,Bench,"Sammie Coates, Pit WR  Q",** BYE **,,--
+2016,8,Mike DeRusso,Chris Hammitt,IR,,,,--
+2016,8,Joe Young,Andrew Lamb,QB,"Russell Wilson, Sea QB",@NO,» L 20-25,11
+2016,8,Joe Young,Andrew Lamb,RB,"Matt Forte, NYJ RB",@Cle,» W 31-28,23
+2016,8,Joe Young,Andrew Lamb,RB/WR,"Michael Crabtree, Oak WR",@TB,» W 30-24,18
+2016,8,Joe Young,Andrew Lamb,RB/WR,"Anquan Boldin, Det WR",@Hou,» L 13-20,1
+2016,8,Joe Young,Andrew Lamb,WR,"Brandon LaFell, Cin WR",Wsh,» T 27-27,1
+2016,8,Joe Young,Andrew Lamb,TE,"Cameron Brate, TB TE",Oak,» L 24-30,11
+2016,8,Joe Young,Andrew Lamb,FLEX,"Knile Davis, GB RB",@Atl,» L 32-33,2
+2016,8,Joe Young,Andrew Lamb,D/ST,Jets D/ST D/ST,@Cle,» W 31-28,1
+2016,8,Joe Young,Andrew Lamb,K,"Stephen Gostkowski, NE K",@Buf,» W 41-25,13
+2016,8,Joe Young,Andrew Lamb,Bench,"Jay Ajayi, Mia RB",** BYE **,,--
+2016,8,Joe Young,Andrew Lamb,Bench,"Charles Sims*, TB RB  IR",Oak,» L 24-30,0
+2016,8,Joe Young,Andrew Lamb,Bench,"Jordan Cameron, Mia TE  Q",** BYE **,,--
+2016,8,Joe Young,Andrew Lamb,Bench,"Matt Jones*, Wsh RB  O",@Cin,» T 27-27,0
+2016,8,Joe Young,Andrew Lamb,Bench,"Tyler Boyd, Cin WR",Wsh,» T 27-27,8
+2016,8,Joe Young,Andrew Lamb,Bench,"Ryan Tannehill, Mia QB",** BYE **,,--
+2016,8,Joe Young,Andrew Lamb,IR,"Sammy Watkins*, Buf WR  IR",NE,» L 25-41,0
+2016,8,Ricky Garcia,Chris Curtin,QB,"Drew Brees, NO QB",Sea,» W 25-20,22.5
+2016,8,Ricky Garcia,Chris Curtin,RB,"Duke Johnson Jr., Cle RB",NYJ,» L 28-31,16
+2016,8,Ricky Garcia,Chris Curtin,RB/WR,"Jordy Nelson, GB WR",@Atl,» L 32-33,19
+2016,8,Ricky Garcia,Chris Curtin,RB/WR,"Julian Edelman, NE WR",@Buf,» W 41-25,13
+2016,8,Ricky Garcia,Chris Curtin,WR,"Julio Jones, Atl WR",GB,» W 33-32,5
+2016,8,Ricky Garcia,Chris Curtin,TE,"Greg Olsen, Car TE",Ari,» W 30-20,2
+2016,8,Ricky Garcia,Chris Curtin,FLEX,"Davante Adams, GB WR",@Atl,» L 32-33,19
+2016,8,Ricky Garcia,Chris Curtin,D/ST,Bills D/ST D/ST,NE,» L 25-41,-2
+2016,8,Ricky Garcia,Chris Curtin,K,"Mason Crosby, GB K",@Atl,» L 32-33,6
+2016,8,Ricky Garcia,Chris Curtin,Bench,"Theo Riddick, Det RB",@Hou,» L 13-20,26
+2016,8,Ricky Garcia,Chris Curtin,Bench,"Matthew Stafford, Det QB",@Hou,» L 13-20,15.5
+2016,8,Ricky Garcia,Chris Curtin,Bench,Packers D/ST D/ST,@Atl,» L 32-33,-2
+2016,8,Ricky Garcia,Chris Curtin,Bench,"Kenny Britt, LA WR",** BYE **,,--
+2016,8,Ricky Garcia,Chris Curtin,Bench,"Cole Beasley, Dal WR",Phi,» W 29-23,9
+2016,8,Ricky Garcia,Chris Curtin,Bench,"Eric Ebron, Det TE",@Hou,» L 13-20,14
+2016,8,Ricky Garcia,Chris Curtin,IR,"Dion Lewis*, NE RB  O",@Buf,» W 41-25,0
+2016,8,Jordan Hiller,Mark Krizmanich,QB,"Cam Newton, Car QB",Ari,» W 30-20,13
+2016,8,Jordan Hiller,Mark Krizmanich,RB,"Devonta Freeman, Atl RB",GB,» W 33-32,21
+2016,8,Jordan Hiller,Mark Krizmanich,RB/WR,"Emmanuel Sanders, Den WR",SD,» W 27-19,10
+2016,8,Jordan Hiller,Mark Krizmanich,RB/WR,"Jacquizz Rodgers, TB RB  Q",Oak,» L 24-30,13
+2016,8,Jordan Hiller,Mark Krizmanich,WR,"Brandon Marshall, NYJ WR",@Cle,» W 31-28,10
+2016,8,Jordan Hiller,Mark Krizmanich,TE,"Charles Clay, Buf TE  Q",NE,» L 25-41,2
+2016,8,Jordan Hiller,Mark Krizmanich,FLEX,"Chris Thompson, Wsh RB",@Cin,» T 27-27,8
+2016,8,Jordan Hiller,Mark Krizmanich,D/ST,Panthers D/ST D/ST,Ari,» W 30-20,18
+2016,8,Jordan Hiller,Mark Krizmanich,K,"Matt Prater, Det K",@Hou,» L 13-20,7
+2016,8,Jordan Hiller,Mark Krizmanich,Bench,"Eddie Lacy*, GB RB  IR",@Atl,» L 32-33,0
+2016,8,Jordan Hiller,Mark Krizmanich,Bench,"Ryan Mathews, Phi RB",@Dal,» L 23-29,8
+2016,8,Jordan Hiller,Mark Krizmanich,Bench,"Tavon Austin, LA WR",** BYE **,,--
+2016,8,Jordan Hiller,Mark Krizmanich,Bench,"Breshad Perriman, Bal WR",** BYE **,,--
+2016,8,Jordan Hiller,Mark Krizmanich,Bench,"Marcus Mariota, Ten QB",Jax,» W 36-22,20.5
+2016,8,Jordan Hiller,Mark Krizmanich,Bench,"Alfred Blue, Hou RB  Q",Det,» W 20-13,4
+2016,8,Jordan Hiller,Mark Krizmanich,IR,"Ameer Abdullah*, Det RB  IR",@Hou,» L 13-20,0
+2016,8,Parker King,mike guiltinan,QB,"Aaron Rodgers, GB QB",@Atl,» L 32-33,35.5
+2016,8,Parker King,mike guiltinan,RB,"Isaiah Crowell, Cle RB",NYJ,» L 28-31,13
+2016,8,Parker King,mike guiltinan,RB/WR,"T.J. Yeldon, Jax RB",@Ten,» L 22-36,9
+2016,8,Parker King,mike guiltinan,RB/WR,"Russell Shepard, TB WR  Q",Oak,» L 24-30,10
+2016,8,Parker King,mike guiltinan,WR,"Jamison Crowder, Wsh WR",@Cin,» T 27-27,25
+2016,8,Parker King,mike guiltinan,TE,"Gary Barnidge, Cle TE",NYJ,» L 28-31,7
+2016,8,Parker King,mike guiltinan,FLEX,"Terrance Williams, Dal WR",Phi,» W 29-23,4
+2016,8,Parker King,mike guiltinan,D/ST,Broncos D/ST D/ST,SD,» W 27-19,18
+2016,8,Parker King,mike guiltinan,K,"Nick Novak, Hou K",Det,» W 20-13,8
+2016,8,Parker King,mike guiltinan,Bench,"DeSean Jackson, Wsh WR  Q",@Cin,» T 27-27,7
+2016,8,Parker King,mike guiltinan,Bench,"C.J. Anderson*, Den RB  IR",SD,» W 27-19,0
+2016,8,Parker King,mike guiltinan,Bench,"Trevor Siemian, Den QB",SD,» W 27-19,9
+2016,8,Parker King,mike guiltinan,Bench,"Kenny Stills, Mia WR",** BYE **,,--
+2016,8,Parker King,mike guiltinan,Bench,"Brian Quick, LA WR",** BYE **,,--
+2016,8,Parker King,mike guiltinan,Bench,"Kapri Bibbs, Den RB",SD,» W 27-19,0
+2016,8,Parker King,mike guiltinan,IR,,,,--
+2016,8,Mark Krizmanich,Jordan Hiller,QB,"Blake Bortles, Jax QB",@Ten,» L 22-36,32
+2016,8,Mark Krizmanich,Jordan Hiller,RB,"Frank Gore, Ind RB",KC,» L 14-30,13
+2016,8,Mark Krizmanich,Jordan Hiller,RB/WR,"Demaryius Thomas, Den WR",SD,» W 27-19,12
+2016,8,Mark Krizmanich,Jordan Hiller,RB/WR,"Travis Benjamin, SD WR  Q",@Den,» L 19-27,13
+2016,8,Mark Krizmanich,Jordan Hiller,WR,"A.J. Green, Cin WR",Wsh,» T 27-27,21
+2016,8,Mark Krizmanich,Jordan Hiller,TE,"Hunter Henry, SD TE",@Den,» L 19-27,3
+2016,8,Mark Krizmanich,Jordan Hiller,FLEX,"Adam Humphries, TB WR",Oak,» L 24-30,8
+2016,8,Mark Krizmanich,Jordan Hiller,D/ST,Lions D/ST D/ST,@Hou,» L 13-20,5
+2016,8,Mark Krizmanich,Jordan Hiller,K,"Cairo Santos, KC K",@Ind,» W 30-14,12
+2016,8,Mark Krizmanich,Jordan Hiller,Bench,"Jarvis Landry, Mia WR",** BYE **,,--
+2016,8,Mark Krizmanich,Jordan Hiller,Bench,"Zach Ertz, Phi TE",@Dal,» L 23-29,5
+2016,8,Mark Krizmanich,Jordan Hiller,Bench,"Jeremy Kerley, SF WR",** BYE **,,--
+2016,8,Mark Krizmanich,Jordan Hiller,Bench,"Carson Wentz, Phi QB",@Dal,» L 23-29,15
+2016,8,Mark Krizmanich,Jordan Hiller,Bench,"Bilal Powell, NYJ RB",@Cle,» W 31-28,14
+2016,8,Mark Krizmanich,Jordan Hiller,Bench,"Josh Ferguson, Ind RB",KC,» L 14-30,0
+2016,8,Mark Krizmanich,Jordan Hiller,IR,"Ladarius Green*, Pit TE  O",** BYE **,,--
