@@ -124,9 +124,11 @@ var csv_data = d3.csv("data/data_import.csv", function(error, data) {
 
   // change string (from CSV) into number format
   data.forEach(function(d) {
+	d.Team = d.Team.split(' NEW').join('');
+	d.Vs = d.Vs.split(' NEW').join('');
 	d.Week = +d.Week
   });
-  
+  console.log(data);
  data = data.filter(function(d) {return d.Year != "" && d.Week <= 13;});
  
  var years = d3.nest()
